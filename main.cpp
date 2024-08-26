@@ -1,5 +1,3 @@
-// zig build-exe -target x86_64-windows-none -L"/home/hel/.wine/drive_c/windows/system32/" -dynamic -lkernel32 -luser32 -cflags --std=c++20 -- --subsystem windows -fentry=Main -O ReleaseSmall -fstrip -flto --gc-sections -ffunction-sections main.cpp
-
 #include "types.hpp"
 #include "win32Utils.hpp"
 #include "memory.hpp"
