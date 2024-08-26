@@ -14,7 +14,7 @@ using BOOLEAN = unsigned char;
 using UINT    = unsigned int;
 using DWORD   = unsigned long;
 using LPDWORD = unsigned long*;
-using SIZE_T  = unsigned long long;
+using SIZE_T  = __SIZE_TYPE__; // :)
 
 /* UTIL TYPES */
 
