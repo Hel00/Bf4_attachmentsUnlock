@@ -4,12 +4,12 @@
 
 extern "C" void Main()
 {
-  static constexpr const char *processName = "Battlefield 4";
+  static constexpr const char *PROCESS_NAME = "Battlefield 4";
   static constexpr auto PROCESS_ALL_ACCESS = (0x000F0000L | 0x00100000L | 0xFFF); // 2035711
-  static constexpr auto delay = 10'000;
+  static constexpr auto DELAY = 10'000;
 
   DWORD processId;
-  HWND processHwnd = FindWindowA(0, processName);
+  HWND processHwnd = FindWindowA(0, PROCESS_NAME);
   GetWindowThreadProcessId(processHwnd, &processId);
   HANDLE processHandle = OpenProcess(PROCESS_ALL_ACCESS, false, processId);
 
@@ -20,7 +20,7 @@ extern "C" void Main()
     unlockEverything = readMemory(processHandle, 0x1423717C0) + 0x54;
     writeMemory(processHandle, unlockEverything, 1);
 
-    Sleep(delay);
+    Sleep(DELAY);
   }
 }
 
