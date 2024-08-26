@@ -18,7 +18,7 @@ using SIZE_T  = __SIZE_TYPE__; // :)
 
 /* UTIL TYPES */
 
-using uint8_t = unsigned char;
+using uint8_t  = unsigned char;
 using uint16_t = unsigned short;
 using uint32_t = unsigned long;
 using uint64_t = unsigned long long;
