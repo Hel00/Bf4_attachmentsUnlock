@@ -28,3 +28,5 @@ extern "C" void WinMain() {}
 extern "C" void wWinMainCRTStartup() { Main(); }
 extern "C" void _fltused() {}
 extern "C" void _tls_index() {}
+extern "C" void mainCRTStartup() {}
+extern "C" void WinMainCRTStartup () {}
