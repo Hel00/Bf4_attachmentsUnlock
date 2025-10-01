@@ -24,6 +24,7 @@ extern "C" void Main()
   }
 }
 
+// Linker satisfaction functions; Don't worry about these
 extern "C" void WinMain() {}
 extern "C" void wWinMainCRTStartup() { Main(); }
 extern "C" void _fltused() {}
